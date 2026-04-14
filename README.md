@@ -1,17 +1,43 @@
-# React + Vite
+# 🛡️ KeenKeeper — Personal Relationship Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**KeenKeeper** is a sophisticated, data-driven personal relationship management (PRM) platform designed to help users track, manage, and nurture their most important connections. Built with a focus on minimalist aesthetics and seamless user experience, it allows users to monitor interaction frequencies and visualize friendship health through advanced analytics.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Key Features
 
-## React Compiler
+- **Dynamic Connection Management:** Seamlessly fetches and renders friend profiles from a dynamic JSON-based data source.
+- **Interaction Logging:** Real-time logging system for tracking Calls, Texts, Video Chats, and In-person Meetups.
+- **Data Visualization:** Integrated **Doughnut Charts** using Recharts to provide a high-level overview of interaction distribution.
+- **Activity Timeline:** A comprehensive, filterable audit trail of all historical interactions sorted by recency.
+- **Responsive Architecture:** Crafted with a mobile-first approach, ensuring a flawless experience across all screen sizes.
+- **Animated User Experience:** Enhanced with Framer Motion for smooth transitions and an interactive 404 Error page.
+- **Instant Feedback:** Integrated toast notifications for immediate user confirmation upon action.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technology Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# A7-Work
+| Category | Technology |
+| :--- | :--- |
+| **Frontend Library** | React.js (Vite) |
+| **Styling** | Tailwind CSS |
+| **Routing** | React Router DOM v6 |
+| **Data Visualization** | Recharts |
+| **Animations** | Framer Motion |
+| **Icons** | React Icons |
+| **Notifications** | React Hot Toast |
+
+---
+
+## 📂 Project Architecture
+
+```text
+├── public/
+│   └── friends.json         # Static database for initial connection profiles
+├── src/
+│   ├── components/          # Reusable UI components (Navbar, Footer, etc.)
+│   ├── pages/               # Functional views (Home, Profile, Timeline, Stats)
+│   ├── layouts/             # Main application wrapper and outlet context
+│   ├── App.jsx              # Core routing logic
+│   └── index.css            # Tailwind directives and global styles
