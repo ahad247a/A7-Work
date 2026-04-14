@@ -12,7 +12,7 @@ function App() {
         <Outlet /> 
         <Toaster position="top-center" reverseOrder={false} />  
       </div>
-      <Footer />
+      <Footer /> 
     </div>
   )
 }

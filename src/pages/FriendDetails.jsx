@@ -78,6 +78,7 @@ const FriendDetails = () => {
             <button className="w-full bg-white p-4 rounded-xl border border-gray-100 flex items-center justify-center gap-3 text-slate-700 hover:bg-gray-50 transition-all font-medium">
               <HiOutlineArchive className="text-xl" /> Archive
             </button>
+
             <button className="w-full bg-white p-4 rounded-xl border border-gray-100 flex items-center justify-center gap-3 text-red-500 font-medium hover:bg-red-50"><HiOutlineTrash className="text-xl" /> Delete</button>
           </div>
         </div>
